@@ -4,7 +4,7 @@
 -price (integer, not accept null values),
 -validity (date, not accept null values),
 -discount (integer) */
-CREATE TABLE tickets(
+CREATE TABLE tickets (
     number CHAR(16) PRIMARY KEY,
     title VARCHAR(50),
     price INTEGER NOT NULL,

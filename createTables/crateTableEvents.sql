@@ -6,6 +6,6 @@
 CREATE TABLE events (
     title VARCHAR(50)  PRIMARY KEY,
     day DATE,
-    time DATE,
+    time TIME,
     room INTEGER NOT NULL
 );
