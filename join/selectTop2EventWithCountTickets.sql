@@ -1,7 +1,6 @@
-/* Displays the two events with the most tickets sold (event title, count tickets) */
-SELECT title, COUNT(number) AS count_tickets
-  FROM tickets
-  GROUP BY title
-  HAVING (COUNT(number) >= 3)
-  ORDER BY count_tickets DESC, title
-  LIMIT 2;
+/* Creation of a view of all current tickets at the moment 
+(unique ticket number, name of the event, ticket price), price must be more than 500. Name of the view is Current tickets */
+CREATE VIEW current_tickets AS
+SELECT number, title, price 
+FROM tickets
+WHERE price > 500;
