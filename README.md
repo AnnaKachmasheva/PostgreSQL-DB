@@ -1,4 +1,4 @@
-# PostgreSQL-DB
+# PostgreSQL DB
 ## DB description
 This database was created for the Entertainment Center. 
 1. Visitors to this center must be registered with the following details:
